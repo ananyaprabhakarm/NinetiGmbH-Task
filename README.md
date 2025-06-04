@@ -26,25 +26,14 @@ flutter pub get
 flutter run
 ```
 
-### 📂 Folder Structure
-
-lib/
-├── core/                  # Shared constants, network config
-├── data/                 
-│   ├── models/            # User, Post, Todo models
-│   └── services/          # API services
-├── logic/                
-│   └── bloc/              # User BLoC (event, state, bloc)
-├── presentation/         
-│   ├── screens/           # UI screens
-│   └── widgets/           # Reusable UI components
-├── main.dart              # App entry point
-
 ### 🌐 API Endpoints Used
 
 Users: https://dummyjson.com/users?limit=20&skip=0
+
 Search Users: https://dummyjson.com/users/search?q=query
+
 User Posts: https://dummyjson.com/posts/user/{userId}
+
 User Todos: https://dummyjson.com/todos/user/{userId}
 
 ### 🧠 Architecture Overview
