@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:ninetigmbh_task/presentation/screens/user_detail_screen.dart';
 import '../../data/models/user_model.dart';
 
 class UserTile extends StatelessWidget {
@@ -15,6 +16,14 @@ class UserTile extends StatelessWidget {
       ),
       title: Text('${user.firstName} ${user.lastName}'),
       subtitle: Text(user.email),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => UserDetailScreen(userId: user.id, user: user),
+          ),
+        );
+      },
     );
   }
 }
